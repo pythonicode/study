@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Story — Progress Update After 15+ Successful Tests</title>
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-weight: 600;
+        src: url("fonts/inter-latin-600-normal.woff2") format("woff2");
+      }
+
+      :root {
+        --ink: #111111;
+        --paper: #ffffff;
+        --accent: #e2231a;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ink);
+      }
+
+      body {
+        font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-feature-settings: "cv11", "ss03";
+        color: var(--paper);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .story {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+      }
+
+      .photo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 64% 50%;
+      }
+
+      .shade {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.62) 0px,
+            rgba(0, 0, 0, 0) 520px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 760px,
+            rgba(10, 10, 10, 0.78) 1180px,
+            rgba(10, 10, 10, 0.94) 1920px
+          );
+      }
+
+      /* Instagram overlays its own UI on the top ~250px of a story. */
+      .masthead {
+        position: absolute;
+        top: 250px;
+        left: 80px;
+        right: 80px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        font-size: 34px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      .mark {
+        width: 32px;
+        height: 32px;
+        background: var(--accent);
+        flex: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="story">
+      <img
+        class="photo"
+        src="../public/images/hans_treadmill_ifkgym.JPG"
+        alt="A participant running on a treadmill in the IFK club gym."
+      />
+      <div class="shade"></div>
+
+      <div class="masthead">
+        <span class="mark"></span>
+        Running Economy Beyond the Treadmill
+      </div>
+    </div>
+  </body>
+</html>
