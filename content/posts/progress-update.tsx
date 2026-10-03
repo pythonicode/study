@@ -340,8 +340,7 @@ function Body() {
   return (
     <>
       <p className="lede">
-        It is finally October, and the study has passed an important
-        milestone: more than 15 tests have now been completed successfully.
+        It&apos;s October, and so far 15 tests have been completed successfully.
       </p>
 
       <dl className="facts">
@@ -360,7 +359,7 @@ function Body() {
       </dl>
 
       <section>
-        <h2>Where Things Stand</h2>
+        <h2>Summary</h2>
         <p>
           Fourteen treadmill tests (C1) are complete, and the first forest test
           (C2) went well. So far no session has needed to be retested or
@@ -393,7 +392,7 @@ function Body() {
       </section>
 
       <section>
-        <h2>The Challenge of the Forest Loop</h2>
+        <h2>Challenges from the Forest Test</h2>
         <Figure
           src={forestLoop}
           alt="Orienteering map with a purple dashed loop marking the forest test route, starting and finishing at the bottom."
