@@ -44,9 +44,7 @@ function Body() {
         </p>
         <ResidualChart />
         <p>
-          The residuals run from +0.81 km/h (A5) to −1.01 km/h (A4). Leaving
-          A4 out of the fit moves R² from 0.79 to 0.90, so that one pair has a
-          noticeable effect on the number.
+          The residuals run from +0.81 km/h (A5) to −1.01 km/h (A4).
         </p>
       </section>
 
@@ -60,14 +58,13 @@ function Body() {
         <IntervalBand />
         <p>
           At 90% confidence, treadmill speed explains somewhere between about
-          half and a bit over 90% of forest speed. The link is real. How
-          strong it is still isn&apos;t pinned down. If R stayed near 0.89,
-          something like 25 athletes would pull the lower bound up to about
-          0.6.
+          half and a bit over 90% of forest speed. If R stayed near 0.89,
+          the planned sample of 25 athletes would pull the lower bound up to about
+          0.6 which is much better.
         </p>
         <p>
           Some of the leftover is just noise. Each 4 mmol/L speed comes from
-          five points, and a few fits were awkward, so those values probably
+          five points, and a few fits were not perfect, so those values probably
           carry ±0.2–0.4 km/h of uncertainty on their own.
         </p>
       </section>
