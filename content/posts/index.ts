@@ -1,3 +1,4 @@
+import { forestPreliminary } from "./forest-preliminary";
 import { progressUpdate } from "./progress-update";
 import { studyBegins } from "./study-begins";
 import { studyProposal } from "./study-proposal";
@@ -6,7 +7,12 @@ import type { Post } from "./types";
 export type { Post } from "./types";
 
 /** Newest first. */
-export const posts: Post[] = [studyProposal, studyBegins, progressUpdate].sort(
+export const posts: Post[] = [
+  studyProposal,
+  studyBegins,
+  progressUpdate,
+  forestPreliminary,
+].sort(
   (a, b) => b.date.localeCompare(a.date),
 );
 
